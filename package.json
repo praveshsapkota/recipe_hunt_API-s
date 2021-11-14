@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "ts-node-dev --no-notify --respawn --transpile-only src/server",
 		"build:replace": "replace-in-file prisma.SortOrder prisma.Prisma.SortOrder **/nexus-typegen.ts && replace-in-file prisma.QueryMode prisma.Prisma.QueryMode **/nexus-typegen.ts",
-		"start": "node dist/server",
+		"start": "node src/server",
 		"clean": "rm -rf dist",
 		"build": "npm -s run clean && npm -s run generate && tsc",
 		"generate": "npm -s run generate:prisma && npm -s run generate:nexus",
