@@ -73,11 +73,11 @@ export const schemaWithoutPermissions = makeSchema({
     ],
     shouldGenerateArtifacts: true,
     outputs: {
-        schema: path.join(__dirname, '..', '/src/generated', 'schema.graphql'),
-        typegen: path.join(__dirname, '..', '/src/generated', 'nexus-typegen.ts'),
+        schema: path.join(__dirname, '..', '/generated/', 'schema.graphql'),
+        typegen: path.join(__dirname, '..', '/generated/', 'nexus-typegen.ts'),
     },
     contextType: {
-        module: require.resolve('../context.ts'),
+        module: require.resolve('../context'),
         export: 'Context',
     },
     sourceTypes: {
