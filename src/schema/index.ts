@@ -77,7 +77,7 @@ export const schemaWithoutPermissions = makeSchema({
         typegen: path.join(__dirname, '..', '/src/generated', 'nexus-typegen.ts'),
     },
     contextType: {
-        module: require.resolve('../context1.ts'),
+        module: require.resolve('../context.ts'),
         export: 'Context',
     },
     sourceTypes: {
