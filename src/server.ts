@@ -77,7 +77,7 @@ const startApolloServer = async (
 
     // Modified server start
     await new Promise((resolve) =>
-        httpServer.listen({ port: (process.env.PORT || 5100) }, (): void => {
+        httpServer.listen({ port: (process.env.PORT || 5000) }, (): void => {
             console.log(
                 `🚀 Server ready at http://localhost:5100${server.graphqlPath}`,
             )
